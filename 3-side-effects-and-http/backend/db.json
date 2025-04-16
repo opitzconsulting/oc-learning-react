@@ -1,0 +1,204 @@
+{
+  "themes": [
+    {
+      "id": 1,
+      "name": "Light",
+      "colors": {
+        "background": "#ffffff",
+        "text": "#000000",
+        "primary": "#007bff",
+        "secondary": "#6c757d"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Dark",
+      "colors": {
+        "background": "#343a40",
+        "text": "#ffffff",
+        "primary": "#17a2b8",
+        "secondary": "#6c757d"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Solarized",
+      "colors": {
+        "background": "#fdf6e3",
+        "text": "#657b83",
+        "primary": "#268bd2",
+        "secondary": "#2aa198"
+      }
+    },
+    {
+      "id": 4,
+      "name": "High Contrast",
+      "colors": {
+        "background": "#000000",
+        "text": "#ffffff",
+        "primary": "#ffcc00",
+        "secondary": "#ff3300"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Ocean",
+      "colors": {
+        "background": "#2e8b57",
+        "text": "#ffffff",
+        "primary": "#1e90ff",
+        "secondary": "#20b2aa"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Forest",
+      "colors": {
+        "background": "#228b22",
+        "text": "#ffffff",
+        "primary": "#6b8e23",
+        "secondary": "#556b2f"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Sunset",
+      "colors": {
+        "background": "#ff4500",
+        "text": "#ffffff",
+        "primary": "#ff6347",
+        "secondary": "#ffa07a"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Lavender",
+      "colors": {
+        "background": "#e6e6fa",
+        "text": "#4b0082",
+        "primary": "#9370db",
+        "secondary": "#dda0dd"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Peach",
+      "colors": {
+        "background": "#ffe5b4",
+        "text": "#8b4513",
+        "primary": "#ffdab9",
+        "secondary": "#ff7f50"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Mint",
+      "colors": {
+        "background": "#f5fffa",
+        "text": "#2e8b57",
+        "primary": "#98fb98",
+        "secondary": "#66cdaa"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Berry",
+      "colors": {
+        "background": "#8a2be2",
+        "text": "#ffffff",
+        "primary": "#ba55d3",
+        "secondary": "#dda0dd"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Autumn",
+      "colors": {
+        "background": "#ff8c00",
+        "text": "#ffffff",
+        "primary": "#d2691e",
+        "secondary": "#cd853f"
+      }
+    },
+    {
+      "id": 13,
+      "name": "Ice",
+      "colors": {
+        "background": "#e0ffff",
+        "text": "#4682b4",
+        "primary": "#b0e0e6",
+        "secondary": "#5f9ea0"
+      }
+    },
+    {
+      "id": 14,
+      "name": "Rose",
+      "colors": {
+        "background": "#fff0f5",
+        "text": "#c71585",
+        "primary": "#ff69b4",
+        "secondary": "#db7093"
+      }
+    },
+    {
+      "id": 15,
+      "name": "Sand",
+      "colors": {
+        "background": "#f4a460",
+        "text": "#8b4513",
+        "primary": "#d2b48c",
+        "secondary": "#deb887"
+      }
+    },
+    {
+      "id": 16,
+      "name": "Sky",
+      "colors": {
+        "background": "#87ceeb",
+        "text": "#ffffff",
+        "primary": "#4682b4",
+        "secondary": "#5f9ea0"
+      }
+    },
+    {
+      "id": 17,
+      "name": "Emerald",
+      "colors": {
+        "background": "#50c878",
+        "text": "#ffffff",
+        "primary": "#2e8b57",
+        "secondary": "#3cb371"
+      }
+    },
+    {
+      "id": 18,
+      "name": "Ruby",
+      "colors": {
+        "background": "#9b111e",
+        "text": "#ffffff",
+        "primary": "#dc143c",
+        "secondary": "#ff6347"
+      }
+    },
+    {
+      "id": 19,
+      "name": "Amethyst",
+      "colors": {
+        "background": "#9966cc",
+        "text": "#ffffff",
+        "primary": "#8a2be2",
+        "secondary": "#9370db"
+      }
+    },
+    {
+      "id": 20,
+      "name": "Gold",
+      "colors": {
+        "background": "#ffd700",
+        "text": "#000000",
+        "primary": "#ffcc00",
+        "secondary": "#ffb700"
+      }
+    }
+  ]
+}

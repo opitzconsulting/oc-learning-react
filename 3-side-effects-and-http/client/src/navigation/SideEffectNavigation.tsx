@@ -17,6 +17,9 @@ function SideEffectNavigation() {
         </Link>
         <Link to="/side-effects/useEffectWithCallback">
           UseEffect With Callback
+        </Link>{' '}
+        <Link to="/side-effects/useEffectWithFetch">
+          UseEffect With Fetch 
         </Link>
       </nav>
     </div>

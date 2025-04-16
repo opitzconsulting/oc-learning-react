@@ -7,17 +7,15 @@ import HomeNavigation from './navigation/HomeNavigation'
 import SideEffectNavigation from './navigation/SideEffectNavigation'
 import UseEffectWithLocalStorage from './components/sideeffects/4UseEffectWithLocalStorage'
 import UseEffectWithCallback from './components/sideeffects/5UseEffectWithCallback'
+import UseEffectWithFetch from './components/sideeffects/6UseEffectWithFetch'
 
 function App() {
-
-
   return (
     <BrowserRouter>
       <HomeNavigation />
 
       <Routes>
         <Route path="/" element={<div />} />
-
         {/* Side Effects */}
         <Route path="/side-effects" element={<SideEffectNavigation />} />
         <Route
@@ -35,9 +33,14 @@ function App() {
         <Route
           path="/side-effects/useEffectWithLocalStorage"
           element={<UseEffectWithLocalStorage />}
-        />        <Route
+        />
+        <Route
           path="/side-effects/useEffectWithCallback"
           element={<UseEffectWithCallback />}
+        />
+        <Route
+          path="/side-effects/useEffectWithFetch"
+          element={<UseEffectWithFetch />}
         />
       </Routes>
     </BrowserRouter>
