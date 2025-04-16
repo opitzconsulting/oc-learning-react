@@ -1,5 +1,4 @@
-import { get } from "./fetch"
-
+import { get } from "./Fetch"
 
 interface JSONPlaceholderPost {
   userId: number
