@@ -1,0 +1,48 @@
+.light {
+    height: 4em;
+    width: 4em;
+    background-color: gray;
+    border-radius: 100%;
+    animation: all ease-in-out;
+    transition: 200ms;
+    cursor: pointer;
+    transform: translateY(0);
+    z-index: 0;
+
+    &[data-variant=red], &[data-variant=red] .blur{
+        background-color: crimson;
+    }
+    
+    &[data-variant=amber], &[data-variant=amber] .blur{
+        background-color: rgb(255, 170, 0);
+    }
+    
+    &[data-variant=green], &[data-variant=green] .blur {
+        background-color: green;
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    .blur {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        filter: blur(50px);
+        pointer-events: none;
+        z-index: -100;
+
+        &[data-variant=red]{
+            background-color: crimson;
+        }
+        
+        &[data-variant=amber]{
+            background-color: rgb(255, 170, 0);
+        }
+        
+        &[data-variant=green]{
+            background-color: green;
+        }
+    }
+}
