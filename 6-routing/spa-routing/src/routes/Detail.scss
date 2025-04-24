@@ -1,0 +1,31 @@
+section#item {
+    display: flex;
+    flex-direction: column;
+
+    span.name {
+        font-size: x-large;
+    }
+
+    span.tel {
+        font-size: small;
+        display: inline-flex;
+        flex-direction: row;
+        gap: 0.25em;
+        align-items: center;
+    }
+
+}
+div.back {
+    margin-top: 1em;
+    align-self: flex-end;
+
+    button {
+        background-color: rgb(68, 68, 68);
+        padding: 0.5em;
+        border: none;
+        border-radius: 10px;
+        &:hover {
+            background-color: rgb(133, 133, 133);
+        }
+    }
+}
