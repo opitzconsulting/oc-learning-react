@@ -20,7 +20,7 @@ Im Rahmen der Aufgabe soll dieser State "nach oben" in die `App.tsx` gezogen wer
 Die "Pizza-O-Mat"-App ermöglicht es Usern den Belag für ihre Lieblings-Pizza zu wählen.
 Damit das Herzblut, das in die sorgfältige Auswahl der Toppings geflossen ist, nicht umsonst war, wenn die Seite neu geladen wird, soll die getroffene Auswahl gespeichert werden.
 
-Die Aufgabe besteht daher daraus, di getroffene Auswahl beim Klick auf den "Speichern"-Button in den Local-Storage abzulegen.
+Die Aufgabe besteht daher daraus, die getroffene Auswahl beim Klick auf den "Speichern"-Button in den Local-Storage abzulegen.
 Gibt es beim Laden der Seite eine abgelegte Auswahl, soll diese aus dem Local-Storage ausgelesen und angezeigt werden.
 
 Für die Lösung soll ein Custom-Hook mit der entsprechenden Logik erstellt werden!
