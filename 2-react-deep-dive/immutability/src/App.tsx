@@ -27,8 +27,7 @@ function App() {
             type="checkbox"
             checked={permissions.admin}
             onChange={() => {
-              permissions.admin = !permissions.admin;
-              setPermissions(permissions);
+              setPermissions({ ...permissions, admin: !permissions.admin });
             }}
           />
           Admin
@@ -38,8 +37,10 @@ function App() {
             type="checkbox"
             checked={permissions.writeMessage}
             onChange={() => {
-              permissions.writeMessage = !permissions.writeMessage;
-              setPermissions(permissions);
+              setPermissions({
+                ...permissions,
+                writeMessage: !permissions.writeMessage,
+              });
             }}
           />
           Write Message
@@ -49,8 +50,10 @@ function App() {
             type="checkbox"
             checked={permissions.readMessage}
             onChange={() => {
-              permissions.readMessage = !permissions.readMessage;
-              setPermissions(permissions);
+              setPermissions({
+                ...permissions,
+                readMessage: !permissions.readMessage,
+              });
             }}
           />
           Read Message

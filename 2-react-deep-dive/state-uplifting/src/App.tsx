@@ -1,13 +1,20 @@
-import Light from './Light';
+import { useState } from 'react';
+import Light, { LightVariant } from './Light';
 
 function App() {
+  const [variant, setVariant] = useState<LightVariant>('green');
   return (
     <>
       <h1>Ampel</h1>
       <section className="lights">
-        <Light variant="red"></Light>
-        <Light variant="amber"></Light>
-        <Light variant="green"></Light>
+        {(['red', 'amber', 'green'] as const).map((e) => (
+          <Light
+            key={e}
+            variant={e}
+            active={variant === e}
+            onClick={setVariant}
+          />
+        ))}
       </section>
     </>
   );
