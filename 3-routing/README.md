@@ -16,3 +16,9 @@ Die Seiten sollen untereinander über die von react-router bereitgestellte Link-
 Die `/users/id` Seite soll das Argument aus dem Pfad extrahieren.
 
 > **TIP**: Die Items auf der Home-Seite beinhalten eine `id`. Diese kann über `e.id` im map-Call aufgerufen werden.
+
+Bonusaufgaben: 
+
+- Versuch zusätzlich eine "Pfadloses" Layout für alle Komponenten zu verwenden
+- Versuch zusätzlich ein Layout für alle `/users/...` Routen zu definieren
+- Versuch eine extra 404-Route für alle User zu definieren
