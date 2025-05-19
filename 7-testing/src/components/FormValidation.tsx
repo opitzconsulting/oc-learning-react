@@ -12,9 +12,9 @@ function FormValidation() {
   })
 
   function handleChange(
-    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+      event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ): void {
-    const { name, value } = event.target
+    const {name, value} = event.target
     setFormData((prevFormData) => ({
       ...prevFormData,
       [name]: value,
@@ -55,40 +55,45 @@ function FormValidation() {
   }
 
   return (
-    <>
-      <form noValidate onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-          />
-          {errors.name && (
-            <>
-              <div className="inner-div">{errors.name}</div>
-            </>
-          )}
-        </div>
+      <>
+        <form noValidate onSubmit={handleSubmit}>
+          <div>
+            <label htmlFor="name">Name</label>
+            <input
+                id="name"
+                type="text"
+                name="name"
+                data-testid="name-input"
+                value={formData.name}
+                onChange={handleChange}
+            />
+            {errors.name && (
+                <>
+                  <div className="inner-div">{errors.name}</div>
+                </>
+            )}
+          </div>
 
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-          />
-          {errors.message && (
-            <>
-              <div className="inner-div">{errors.message}</div>
-            </>
-          )}
-        </div>
+          <div>
+            <label htmlFor="message">Message</label>
+            <textarea
+                id="message"
+                name="message"
+                data-testid="message-input"
+                value={formData.message}
+                onChange={handleChange}
+            />
+            {errors.message && (
+                <>
+                  <div className="inner-div">{errors.message}</div>
+                </>
+            )}
+          </div>
 
-        <button type="submit">Submit</button>
-      </form>
-    </>
+          <button type="submit" data-testid="submit-button">Submit</button>
+        </form>
+      </>
   )
 }
+
 export default FormValidation
