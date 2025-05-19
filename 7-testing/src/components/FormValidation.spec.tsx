@@ -2,15 +2,30 @@ import {describe} from "vitest";
 
 describe("FormValidation", () => {
 
-  describe("should display message 'Name is required' when form is submitted without values", () => {
+  it("should display message 'Name is required' when form is submitted without values", () => {
+    // Arrange
+
+    // Act
+
+    // Assert
     // FIXME Übungsaufgabe
   })
 
-  describe("should display message 'Message is required' when name was typed and form is submitted", () => {
+  it("should display message 'Message is required' when name was typed and form is submitted", () => {
+    // Arrange
+
+    // Act
+
+    // Assert
     // FIXME Übungsaufgabe
   })
 
-  describe("should show success alert when name and message was typed and form is submitted", () => {
+  it("should show success alert when name and message was typed and form is submitted", () => {
+    // Arrange
+
+    // Act
+
+    // Assert
     // FIXME Übungsaufgabe
   })
 })
