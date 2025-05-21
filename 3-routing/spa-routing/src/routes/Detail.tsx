@@ -1,16 +1,24 @@
+import { Link, useParams } from 'react-router';
 import { Store } from '../data';
 import { MaterialSymbolsCall } from '../icons/Phone';
 import './Detail.scss';
 
 export default function Detail() {
-  const id = 'af300be7-68da-43c2-a293-b54f0a0c31ab';
+  const { id } = useParams();
+
+  if (!id) {
+    return <></>; // will never happen
+  }
+
   const e = Store.instance.getItem(id);
 
   if (!e) {
     return (
       <div>
         <p>Not found</p>
-        <button>Go back</button>
+        <div className="back">
+          <Link to={'/'}>Go back</Link>
+        </div>
       </div>
     );
   }
@@ -23,7 +31,7 @@ export default function Detail() {
         <MaterialSymbolsCall /> {e.tel}
       </span>
       <div className="back">
-        <button>Go back</button>
+        <Link to={'/'}>Go back</Link>
       </div>
     </section>
   );

@@ -1,4 +1,9 @@
 section#items {
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
     ul {
         li {
             &:hover {

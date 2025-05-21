@@ -19,8 +19,10 @@ div.back {
     margin-top: 1em;
     align-self: flex-end;
 
-    button {
+    a {
         background-color: rgb(68, 68, 68);
+        text-decoration: none;
+        color: white;
         padding: 0.5em;
         border: none;
         border-radius: 10px;

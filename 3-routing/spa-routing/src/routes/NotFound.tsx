@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import './Detail.scss';
 export function NotFound() {
   return (
@@ -5,7 +6,7 @@ export function NotFound() {
       <span className="name">Not Found</span>
       <p>The page you're looking for does not exist</p>
       <div className="back">
-        <button>Go back</button>
+        <Link to={'/'}>Go back</Link>
       </div>
     </section>
   );
