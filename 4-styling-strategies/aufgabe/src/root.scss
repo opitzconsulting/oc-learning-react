@@ -1,0 +1,14 @@
+
+html {
+    background-color: oklch(20.8% 0.042 265.755);
+}
+#root {
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-family: sans-serif;
+}
