@@ -14,7 +14,7 @@ function UseEffectAtPageLoad() {
 
   return (
     <>
-      <h2>🔧 useEffect At Page Load</h2>
+      <h2>useEffect At Page Load</h2>
       <p>Live-Tick: {tick} ...</p>
     </>
   )
