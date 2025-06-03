@@ -8,6 +8,8 @@ import SideEffectNavigation from './navigation/SideEffectNavigation'
 import UseEffectWithLocalStorage from './components/sideeffects/4UseEffectWithLocalStorage'
 import UseEffectWithCallback from './components/sideeffects/5UseEffectWithCallback'
 import UseEffectWithFetch from './components/sideeffects/6UseEffectWithFetch'
+import UseEffectExerciseScreen1 from './components/exercise/UseEffectExerciseScreen1'
+import UseEffectExerciseScreen2 from './components/exercise/UseEffectExerciseScreen2'
 
 function App() {
   return (
@@ -41,6 +43,14 @@ function App() {
         <Route
           path="/side-effects/useEffectWithFetch"
           element={<UseEffectWithFetch />}
+        />
+        <Route
+          path="/side-effects/useEffectExerciseScreen1"
+          element={<UseEffectExerciseScreen1 />}
+        />
+        <Route
+          path="/side-effects/useEffectExerciseScreen2"
+          element={<UseEffectExerciseScreen2 />}
         />
       </Routes>
     </BrowserRouter>

@@ -21,6 +21,9 @@ function SideEffectNavigation() {
         <Link to="/side-effects/useEffectWithFetch">
           UseEffect With Fetch 
         </Link>
+        <Link to="/side-effects/useEffectExerciseScreen1">
+          Exercise Screen 1
+        </Link>
       </nav>
     </div>
   )
