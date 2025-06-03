@@ -31,32 +31,19 @@ function FormWithUseInputHook() {
   })
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>): void {
-    event.preventDefault()
+  event.preventDefault()
 
-    if (hasNameError) {
-      setErrors((prevState) => {
-        return {
-          ...prevState,
-          name: 'Invalid Name',
-        }
-      })
+  setErrors({
+    name: hasNameError ? 'Invalid Name' : '',
+    message: hasMessageError ? 'Invalid Message' : '',
+  })
 
-      return
-    }
-
-    if (hasMessageError) {
-      setErrors((prevState) => {
-        return {
-          ...prevState,
-          message: 'Invalid Message',
-        }
-      })
-
-      return
-    }
-
-    console.log('submitted', { name: nameValue, message: messageValue })
+  if (hasNameError || hasMessageError) {
+    return
   }
+
+  console.log('submitted', { name: nameValue, message: messageValue })
+}
 
   return (
     <>
