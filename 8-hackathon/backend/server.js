@@ -62,6 +62,17 @@ app.post('/api/games', async (req, res) => {
   res.json({ gameId })
 })
 
+// Zweiter Spieler tritt bei
+app.post('/api/games/:gameId/join', (req, res) => {
+  const { playerName } = req.body
+  const game = db.getData(`/games`).find(g => g.id === req.params.gameId)
+  if (!game || game.players.length >= 2) return res.status(400).json({ error: 'Nicht möglich' })
+  game.players.push({ name: playerName, score: 0, answers: [] })
+  game.status = 'running'
+  db.push(`/games`, db.getData('/games'))
+  res.json({ success: true })
+})
+
 const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
   console.log(`Opitz-Quiz Backend läuft auf Port ${PORT}`)
