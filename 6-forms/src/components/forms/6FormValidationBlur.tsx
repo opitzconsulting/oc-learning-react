@@ -84,6 +84,7 @@ function FormValidationBlur() {
         <div>
           <label htmlFor="name">Name:</label>
           <input
+            id="name"
             type="text"
             name="name"
             value={formData.name}
@@ -100,6 +101,7 @@ function FormValidationBlur() {
         <div>
           <label htmlFor="message">Message:</label>
           <textarea
+            id="message"
             name="message"
             value={formData.message}
             onChange={handleChange}

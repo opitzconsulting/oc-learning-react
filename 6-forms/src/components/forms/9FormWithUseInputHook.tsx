@@ -6,7 +6,7 @@ import CustomTextarea from '../custom/CustomTextarea'
 
 function FormWithUseInputHook() {
   const {
-    value: nameValue,
+    value: nameValue, //Wert 'value' aus dem Hook wird hier als 'nameValue' bezeichnet und in der Variable gespeichert
     inputBlurHandler: handleNameBlur,
     valueChangeHandler: handleNameChange,
     hasError: hasNameError,
@@ -38,6 +38,7 @@ function FormWithUseInputHook() {
     message: hasMessageError ? 'Invalid Message' : '',
   })
 
+  // Wenn es Fehler gibt, wird die Funktion abgebrochen
   if (hasNameError || hasMessageError) {
     return
   }

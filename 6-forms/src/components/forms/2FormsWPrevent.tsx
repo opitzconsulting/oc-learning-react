@@ -15,7 +15,13 @@ function FormsWPrevent() {
   return (
     <form onSubmit={handleSubmit}>
       <label htmlFor="name">Name:</label>
-      <input type="text" name="name" value={text} onChange={handleChange} />
+      <input
+        id="name"
+        type="text"
+        name="name"
+        value={text}
+        onChange={handleChange}
+      />
       <button type="submit">Submit</button>
     </form>
   )

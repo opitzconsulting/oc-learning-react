@@ -1,5 +1,5 @@
 # Aufgabe 
-Erstelle ein Projekt mit einer Seite (z.B. in der App.tsx), in der eine Form mit mindestens 2 Feldern (Name, Nachricht) abgeschickt werden. Die Felder müssen validiert werden:
+Wir möchten über eine Form mindestens 2 Felder (Name, Nachricht) weiterverarbeiten. Die Felder müssen validiert werden:
 
 - Name leer: „Bitte den Namen ausfüllen.“
 Name enthält weniger als 3 Zeichen: „Bitte einen Namen mit mindestens 3 Zeichen angeben.“
