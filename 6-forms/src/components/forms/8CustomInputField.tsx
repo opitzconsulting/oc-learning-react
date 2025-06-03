@@ -58,21 +58,6 @@ function FormCustomInputField() {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-          />
-          {errors.name && (
-            <>
-              <div className="inner-div">{errors.name}</div>
-            </>
-          )}
-        </div>
-
         <CustomInput
           id={'name'}
           name={'name'}
