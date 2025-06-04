@@ -73,6 +73,22 @@ app.post('/api/games/:gameId/join', (req, res) => {
   res.json({ success: true })
 })
 
+// antworten speichern und Punkte zählen
+app.post('/api/games/:gameId/answer', (req, res) => {
+  const { playerName, questionId, answer } = req.body
+  const games = db.getData('/games')
+  const game = games.find(g => g.id === req.params.gameId)
+  if (!game) return res.status(404).json({ error: 'Game not found' })
+  const player = game.players.find(p => p.name === playerName)
+  if (!player) return res.status(404).json({ error: 'Player not found' })
+  player.answers.push(answer)
+  // Hole die Frage und prüfe, ob Antwort korrekt
+  const question = db.getData('/questions').find(q => q.id === questionId)
+  if (question && answer === question.correct) player.score++
+  db.push('/games', games)
+  res.json({ correct: question && answer === question.correct })
+})
+
 const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
   console.log(`Opitz-Quiz Backend läuft auf Port ${PORT}`)
