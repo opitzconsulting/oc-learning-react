@@ -12,6 +12,8 @@ import FormWithUseInputHook from './components/forms/9FormWithUseInputHook'
 import HomeNavigation from './navigation/HomeNavigation'
 import FormsNavigation from './navigation/FormsNavigation'
 import { useEffect } from 'react'
+import FormWithCustomHook from './exercise/FormWithCustomHook'
+import DankeScreen from './exercise/DankeScreen'
 
 function App() {
   useEffect(() => {
@@ -51,6 +53,14 @@ function App() {
         <Route
           path="/forms/formsWithUseInputHook"
           element={<FormWithUseInputHook />}
+        />
+                <Route
+          path="/forms/exercise"
+          element={<FormWithCustomHook />}
+        />
+                        <Route
+          path="/thx"
+          element={<DankeScreen />}
         />
       </Routes>
     </BrowserRouter>
