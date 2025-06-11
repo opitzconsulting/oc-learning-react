@@ -6,7 +6,7 @@ import CustomTextarea from '../custom/CustomTextarea'
 
 function FormWithUseInputHook() {
   const {
-    value: nameValue,
+    value: nameValue, //Wert 'value' aus dem Hook wird hier als 'nameValue' bezeichnet und in der Variable gespeichert
     inputBlurHandler: handleNameBlur,
     valueChangeHandler: handleNameChange,
     hasError: hasNameError,
@@ -31,32 +31,20 @@ function FormWithUseInputHook() {
   })
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>): void {
-    event.preventDefault()
+  event.preventDefault()
 
-    if (hasNameError) {
-      setErrors((prevState) => {
-        return {
-          ...prevState,
-          name: 'Invalid Name',
-        }
-      })
+  setErrors({
+    name: hasNameError ? 'Invalid Name' : '',
+    message: hasMessageError ? 'Invalid Message' : '',
+  })
 
-      return
-    }
-
-    if (hasMessageError) {
-      setErrors((prevState) => {
-        return {
-          ...prevState,
-          message: 'Invalid Message',
-        }
-      })
-
-      return
-    }
-
-    console.log('submitted', { name: nameValue, message: messageValue })
+  // Wenn es Fehler gibt, wird die Funktion abgebrochen
+  if (hasNameError || hasMessageError) {
+    return
   }
+
+  console.log('submitted', { name: nameValue, message: messageValue })
+}
 
   return (
     <>

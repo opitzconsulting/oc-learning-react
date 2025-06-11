@@ -16,7 +16,7 @@ function UseEffectAtRender() {
 
   return (
     <>
-      <h2> useEffect at Render!</h2>
+      <h2>useEffect at Render!</h2>
       <p>Loop: {tick}</p>
     </>
   )

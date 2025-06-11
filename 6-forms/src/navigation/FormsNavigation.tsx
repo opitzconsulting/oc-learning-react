@@ -40,6 +40,11 @@ function FormsNavigation() {
               Form with Custom useInput() Hook
             </Link>
           </div>
+          <div>
+            <Link to="/forms/exercise">
+              Exercise
+            </Link>
+          </div>
         </nav>
       </>
     )

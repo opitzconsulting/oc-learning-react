@@ -40,6 +40,7 @@ function FormsWithFormData() {
         <div>
           <label htmlFor="name">Name:</label>
           <input
+            id="name"
             type="text"
             name="name"
             value={userInputData.name}
@@ -50,6 +51,7 @@ function FormsWithFormData() {
         <div>
           <label htmlFor="email">Email:</label>
           <input
+            id="email"
             type="email"
             name="email"
             value={userInputData.email}
@@ -60,6 +62,7 @@ function FormsWithFormData() {
         <div>
           <label htmlFor="message">Message:</label>
           <textarea
+            id="message"
             name="message"
             value={userInputData.message}
             onChange={handleChange}

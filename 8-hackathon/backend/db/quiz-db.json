@@ -1,0 +1,95 @@
+{
+    "categories": [
+       
+        {
+            "id": 2,
+            "name": "Unternehemn"
+        },
+        {
+            "id": 3,
+            "name": "Technologie"
+        },
+        {
+            "id": 4,
+            "name": "Mathematik"
+        },
+        {
+            "id": 5,
+            "name": "Tierwelt"
+        }
+    ],
+    "questions": [
+        {
+            "id": 2,
+            "category": "Unternehemn",
+            "question": "Welches Jahr gilt als Gründungsjahr der Opitz Consulting?",
+            "answers": [
+                "1990",
+                "1995",
+                "2000",
+                "2005"
+            ],
+            "correct": 1
+        },
+        {
+            "id": 2,
+            "category": "Unternehemn",
+            "question": "Mit welchem Namen wurde die Opitz Consulting gegründet?",
+            "answers": [
+                "Opitz GmbH",
+                "TRIGON",
+                "Modern Software",
+                "BRP IT"
+            ],
+            "correct": 2
+        },
+        {
+            "id": 2,
+            "category": "Unternehemn",
+            "question": "Welche 2 Standorte wurden 1999 eröffnet?",
+            "answers": [
+                "Bad Homburg/Stuttgart",
+                "Berlin/Hamburg",
+                "Nürnberg/Essen",
+                "München/Hamburg"
+            ],
+            "correct": 4
+        },
+        {
+            "id": 3,
+            "category": "Unternehmen",
+            "question": "Wann wurden die Standorte Berlin/Essen eröffnet?",
+            "answers": [
+                "1999",
+                "2008",
+                "2010",
+                "2015"
+            ],
+            "correct": 2
+        },
+        {
+            "id": 4,
+            "category": "Unternehmen",
+            "question": "wie viel Mio. Euro betrag der Umsatz der OC im Jahre 2023?",
+            "answers": [
+                "56,2",
+                "62,9",
+                "65,4",
+                "60,4"
+            ],
+            "correct": 3
+        },
+        {
+            "id": 5,
+            "category": "Unternehemn",
+            "question": "Wie viele Systeme haben wir im Support?",
+            "answers": [
+                "4.000+",
+                "200+",
+                "42+",
+                "10.0000+"
+            ],
+            "correct": 0
+        }
+    ]
+}

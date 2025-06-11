@@ -72,6 +72,7 @@ function FormsWSpread() {
         <div>
           <label htmlFor="name">Name:</label>
           <input
+            id="name"
             type="text"
             name="name"
             value={formData.name}
@@ -87,6 +88,7 @@ function FormsWSpread() {
         <div>
           <label htmlFor="email">Email:</label>
           <input
+            id="email"
             type="email"
             name="email"
             value={formData.email}
@@ -102,6 +104,7 @@ function FormsWSpread() {
         <div>
           <label htmlFor="message">Message:</label>
           <textarea
+            id="message"
             name="message"
             value={formData.message}
             onChange={handleChange}
